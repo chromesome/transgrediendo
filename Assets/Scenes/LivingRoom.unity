@@ -175,7 +175,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8fe7b7ccf8361479e79b3584f7ecaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MyButton: {fileID: 0}
 --- !u!114 &411233834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -476,7 +475,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.1254902, g: 0.1254902, b: 0.1254902, a: 0}
+  m_BackGroundColor: {r: 0.6313726, g: 0.3529412, b: 0.69803923, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

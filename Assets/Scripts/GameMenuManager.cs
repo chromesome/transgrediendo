@@ -30,8 +30,7 @@ public class GameMenuManager : MonoBehaviour
             if (hit.collider != null)
             {
                 Debug.Log("Golpeó un objeto: " + hit.collider.name);
-                nombreObjeto = hit.collider.name;           
-        
+                nombreObjeto = hit.collider.name;       
                 ChangeScene(nombreObjeto);
             }
         }
