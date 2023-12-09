@@ -207,6 +207,14 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8860581725397927811, guid: 684344d97b80c6d438c67c99f3090b89, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 465d568889cb19e42b7180096f30b7c3, type: 2}
+    - target: {fileID: 8860581725397927811, guid: 684344d97b80c6d438c67c99f3090b89, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
