@@ -50,9 +50,7 @@ MonoBehaviour:
   ArchiveCanvas: {fileID: 0}
   <DescriptionText>k__BackingField: {fileID: 0}
   <imagenPrincipal>k__BackingField: {fileID: 0}
-  <objectsInPile>k__BackingField:
-  - {fileID: 7030067050319027178, guid: 2233c955b31094d4aba4e36b88f93cf6, type: 3}
-  - {fileID: 3298027476160854140, guid: 94e0be9028996b54b806c5ddb8364d13, type: 3}
+  <objectsInPile>k__BackingField: []
 --- !u!212 &7596406531645221329
 SpriteRenderer:
   m_ObjectHideFlags: 0
