@@ -18,14 +18,6 @@ public class DayController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isAtNight == true)
-        {
-            CambiarFondo(fondoNoche);
-        }
-        else
-        {
-            CambiarFondo(fonfoDefault);
-        }
     }
 
     void CambiarFondo(Sprite nuevoFondo)
@@ -46,5 +38,18 @@ public class DayController : MonoBehaviour
             Vector2 dimensionesNuevas = nuevoFondo.bounds.size;
             renderizador.transform.localScale *= new Vector2(dimensionesActuales.x / dimensionesNuevas.x, dimensionesActuales.y / dimensionesNuevas.y);
         }
+    }
+
+    void CambiarFondo()
+    {
+        if(!isAtNight)
+        {
+            CambiarFondo(fonfoDefault);
+        }
+        else
+        {
+            CambiarFondo(fondoNoche);
+        }
+
     }
 }
