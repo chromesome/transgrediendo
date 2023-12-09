@@ -14,7 +14,7 @@ public class PileOfObjects : MonoBehaviour
     TextMeshProUGUI DescriptionText { get; set; }
 
     [field: SerializeField]
-    RawImage imagenPrincipal { get; set; }
+    Image imagenPrincipal { get; set; }
 
     
     [field: SerializeField]
@@ -45,7 +45,7 @@ public class PileOfObjects : MonoBehaviour
                 {
                     print("apretaste la fila de fotos");
                     currentPage = 0;
-                    imagenPrincipal.texture = objectsInPile[currentPage].ImagenPrincipal.;
+                    imagenPrincipal.sprite = objectsInPile[currentPage].ImagenPrincipal;
                     DescriptionText.SetText(objectsInPile[currentPage].TextoPrincipal);
                     ArchiveCanvas.enabled = true;
                 }
@@ -59,6 +59,7 @@ public class PileOfObjects : MonoBehaviour
         currentPage++;
         if(currentPage <objectsInPile.Count)
         {
+            imagenPrincipal.sprite = objectsInPile[currentPage].ImagenPrincipal;
             DescriptionText.SetText(objectsInPile[currentPage].TextoPrincipal);
         }
         else
