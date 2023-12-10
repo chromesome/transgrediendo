@@ -6,13 +6,16 @@ public class DialogLine : MonoBehaviour
 {
 
     [field: SerializeField]
-    Sprite CharacterImage;
+    public Sprite CharacterImage { get; set; }
 
     [field: SerializeField]
-    string CharacterDialog;
+    public string CharacterDialog { get; set; }
 
     [field: SerializeField]
-    string CharacterName;
+    public string CharacterName { get; set; }
+
+    [field: SerializeField]
+    public Color BackgroundColor { get; set; }
 
 
     // Start is called before the first frame update
