@@ -74,7 +74,6 @@ public class DialogManager : MonoBehaviour
         else
         {
             DialogCanvas.enabled = false;
-
         }
     }
 
