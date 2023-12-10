@@ -38,12 +38,10 @@ public class GameMenuManager : MonoBehaviour
             // Verifica si el rayo golpea un objeto
             if (hit.collider != null)
             {
-                //if (hit.collider.GetType().typeof<GameMenuManager>()) chequear que le pegamos a GameMenuManager para que no tire error de que otros objetos no son escena
-                {
-                    Debug.Log("Golpeó un objeto: " + hit.collider.name);
-                    nombreObjeto = hit.collider.name;       
-                    ChangeScene(nombreObjeto);
-                }
+                Debug.Log("Golpeó un objeto: " + hit.collider.name);
+                nombreObjeto = hit.collider.name;       
+                ChangeScene(nombreObjeto);
+                
             }
         }
     }

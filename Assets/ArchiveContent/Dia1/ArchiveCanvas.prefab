@@ -282,8 +282,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <ViewingPile>k__BackingField: {fileID: 0}
---- !u!1 &5015227353562481266
-GameObject:
 --- !u!82 &137499773579753761
 AudioSource:
   m_ObjectHideFlags: 0
@@ -412,7 +410,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8674096067918276978}
-  - {fileID: 5354469275772404495}
   - {fileID: 6148497200243518200}
   - {fileID: 533873630264837872}
   - {fileID: 9168788161356164681}
@@ -518,10 +515,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 3402660934776143957}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -250, y: 0}
-  m_SizeDelta: {x: -800, y: -319}
+  m_SizeDelta: {x: 358, y: 393}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6914122241100249790
 CanvasRenderer:
@@ -551,9 +548,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d1fef94819aee8e44a205a1032942598, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
-  m_PreserveAspect: 1
+  m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -668,10 +665,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 3402660934776143957}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 250, y: -20}
-  m_SizeDelta: {x: 430, y: 502}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -280, y: -5}
+  m_SizeDelta: {x: 430, y: -210}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4358230980576741142
 CanvasRenderer:
