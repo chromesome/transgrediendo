@@ -50,7 +50,7 @@ public class DialogManager : MonoBehaviour
                 if (hit.collider != null)
                 {
                     print("lepegaste a algo: " + hit.collider.name);
-                    if (hit.collider.name.Equals("DialogManager"))
+                    if (hit.collider.CompareTag("objeto"))
                     {
                         print("apretaste la al dialog manager, preparate para una charla");
                         currentPage = 0;

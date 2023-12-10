@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Backbtn
   - objeto
+  - dialogs
   layers:
   - Default
   - TransparentFX

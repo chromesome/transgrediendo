@@ -8,11 +8,18 @@ public class RoomController : MonoBehaviour
     // Start is called before the first frame update
     public DialogManager dialogoVieja01;
     public DialogManager dialogoVieja02;
+
+    public List<Canvas> dialogCanvases;
     private UiBarScript misionestbtn;
 
     void Start()
     {
-        misionestbtn = GetComponent<UiBarScript>();
+        foreach (Canvas dialogCanvas in dialogCanvases)
+        {
+            dialogCanvas.enabled = false;
+        }
+
+        misionestbtn = FindObjectOfType<UiBarScript>(); //GetComponent<UiBarScript>();
 
 
         Debug.Log("misionestbtn.MisionCompleta(0)" + misionestbtn);
