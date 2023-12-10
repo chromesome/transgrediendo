@@ -10,14 +10,17 @@ public class GameMenuManager : MonoBehaviour
     string nombreObjeto;
     public bool candadoabierto = false;
     private UiBarScript mainCanvas;
- 
+    AudioSource mBackBtn;
+
 
     // Start is called before the first frame update
     void Start()
     {
         mainCanvas = UiBarScript.Instance;
         mainCanvas.enabled = true;
-        
+        mBackBtn = GetComponent<AudioSource>();
+
+
     }
 
     // Update is called once per frame
@@ -38,6 +41,7 @@ public class GameMenuManager : MonoBehaviour
                 Debug.Log("Golpeó un objeto: " + hit.collider.name);
                 nombreObjeto = hit.collider.name;       
                 ChangeScene(nombreObjeto);
+                
             }
         }
     }
@@ -46,6 +50,7 @@ public class GameMenuManager : MonoBehaviour
     {
         //Cambia la escena
         SceneManager.LoadScene(lvlName);
+        mBackBtn.Play();
     }
 
     public void QuitGame()
