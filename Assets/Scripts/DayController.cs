@@ -6,18 +6,26 @@ using UnityEngine.UI;
 
 
 public class DayController : MonoBehaviour
-{    public bool isAtNight = false;
+{   
+    public bool isAtNight = false;
     public Sprite fondoNoche;
-    public Sprite fonfoDefault;
+    public Sprite fondoDefault;
+    public ButtonCntroller ayudarbtn;
+    public ButtonCntroller cocinarbtn;
+    public ButtonCntroller Recursosbtn;
+
+
 
     // Start is called before the first frame update
     void Start()
-    {        
+    {  
+     
     }
 
     // Update is called once per frame
     void Update()
-    {
+    {        
+        
     }
 
     void CambiarFondo(Sprite nuevoFondo)
@@ -40,15 +48,33 @@ public class DayController : MonoBehaviour
         }
     }
 
-    void CambiarFondo()
-    {
+    public void CambiarFondo()
+    {       
+
         if(!isAtNight)
         {
-            CambiarFondo(fonfoDefault);
+            CambiarFondo(fondoDefault);
         }
         else
         {
             CambiarFondo(fondoNoche);
+        }
+
+    }
+
+    public void PasarDia()
+    {
+
+        //Debug.Log("Var de Ayudarbtn: ", ayudarbtn.);
+
+        bool ayudarbtnCumplido = ayudarbtn.objetivoCumplido;
+        bool recursosbtnCumplido = Recursosbtn.objetivoCumplido;
+        bool cocinarbtnCumplido = cocinarbtn.objetivoCumplido;
+
+        if(cocinarbtnCumplido && recursosbtnCumplido && ayudarbtnCumplido)
+        {
+            isAtNight = !isAtNight;
+            CambiarFondo();
         }
 
     }
