@@ -43,6 +43,7 @@ public class GameMenuManager : MonoBehaviour
                     Debug.Log("Golpeó un objeto: " + hit.collider.name);
                     nombreObjeto = hit.collider.name;       
                     ChangeScene(nombreObjeto);
+                    
                 }
             }
         }
@@ -52,7 +53,12 @@ public class GameMenuManager : MonoBehaviour
     {
         //Cambia la escena
         SceneManager.LoadScene(lvlName);
-        mBackBtn.Play();
+        if (lvlName == "Kitchen")
+        {
+            Debug.Log("Play Ambiente Cocina");
+            mBackBtn.Play();
+        }    
+        
     }
 
     public void QuitGame()
