@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class DayController : MonoBehaviour
@@ -75,6 +76,7 @@ public class DayController : MonoBehaviour
         {
             isAtNight = !isAtNight;
             CambiarFondo();
+            SceneManager.LoadScene("FinalDemo");            
         }
 
     }
