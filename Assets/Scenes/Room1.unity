@@ -240,6 +240,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogoVieja01: {fileID: 1441089181}
   dialogoVieja02: {fileID: 1345703691}
+  dialogCanvases:
+  - {fileID: 1441089182}
+  - {fileID: 1345703692}
 --- !u!1 &318250130
 GameObject:
   m_ObjectHideFlags: 0
@@ -611,7 +614,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1023737509311605722, guid: fd8fe1f2863c7e54dbdb7e2a93c1b6a0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1023737509311605722, guid: fd8fe1f2863c7e54dbdb7e2a93c1b6a0, type: 3}
       propertyPath: m_TagString
@@ -689,6 +692,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15581500033d44a4ca213f483fa436be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!223 &1345703692 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 3297605481941600140, guid: fd8fe1f2863c7e54dbdb7e2a93c1b6a0, type: 3}
+  m_PrefabInstance: {fileID: 1345703690}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1441089180
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -777,6 +785,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15581500033d44a4ca213f483fa436be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!223 &1441089182 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 3297605481941600140, guid: fd8fe1f2863c7e54dbdb7e2a93c1b6a0, type: 3}
+  m_PrefabInstance: {fileID: 1441089180}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1481491125
 GameObject:
   m_ObjectHideFlags: 0
