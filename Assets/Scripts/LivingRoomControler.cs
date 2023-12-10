@@ -24,7 +24,7 @@ public class LivingRoomControler : MonoBehaviour
         {
             dialogoYasmin.enabled=true;
             piladeobjetos.enabled = false;
-            misionestbtn.CompletarMision(0);           
+            //misionestbtn.CompletarMision(0);           
         }
         else
         {
