@@ -21,10 +21,14 @@ public class PileOfObjects : MonoBehaviour
     List<InteractiveObject> objectsInPile { get; set; }
 
     int currentPage = 0;
+    AudioSource mPileOfObjects;
 
     // Start is called before the first frame update
     void Start()
     {
+        //Acá me empiezo a mandar caagadas 
+
+        mPileOfObjects = GetComponent<AudioSource>();
         ArchiveCanvas.enabled = false;
     }
 
@@ -40,9 +44,14 @@ public class PileOfObjects : MonoBehaviour
 
             if(hit.collider != null )
             {
+                
                 print("lepegaste a algo: " + hit.collider.name);
                 if (hit.collider.name.Equals("PilaDeFotos"))
                 {
+                    if (!mPileOfObjects.isPlaying)
+                    {
+                        mPileOfObjects.Play();
+                    }
                     print("apretaste la fila de fotos");
                     currentPage = 0;
                     imagenPrincipal.sprite = objectsInPile[currentPage].ImagenPrincipal;
