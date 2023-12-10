@@ -282,7 +282,7 @@ GameObject:
   - component: {fileID: 229866619}
   m_Layer: 0
   m_Name: fondo_cocina
-  m_TagString: Untagged
+  m_TagString: objeto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -712,7 +712,7 @@ GameObject:
   - component: {fileID: 1815237322}
   m_Layer: 0
   m_Name: Recurso 1
-  m_TagString: Untagged
+  m_TagString: objeto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -929,6 +929,10 @@ PrefabInstance:
     - target: {fileID: 1023737509311605722, guid: fd8fe1f2863c7e54dbdb7e2a93c1b6a0, type: 3}
       propertyPath: m_Name
       value: DialogManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023737509311605722, guid: fd8fe1f2863c7e54dbdb7e2a93c1b6a0, type: 3}
+      propertyPath: m_TagString
+      value: objeto
       objectReference: {fileID: 0}
     - target: {fileID: 2917287492441165652, guid: fd8fe1f2863c7e54dbdb7e2a93c1b6a0, type: 3}
       propertyPath: m_LocalPosition.x
