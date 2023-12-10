@@ -1057,6 +1057,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3524213925373162520, guid: fd8fe1f2863c7e54dbdb7e2a93c1b6a0, type: 3}
+      propertyPath: missionAcomplished
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3524213925373162520, guid: fd8fe1f2863c7e54dbdb7e2a93c1b6a0, type: 3}
       propertyPath: dialogLines.Array.size
       value: 18
       objectReference: {fileID: 0}
