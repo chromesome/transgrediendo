@@ -77,4 +77,36 @@ public class UiBarScript : MonoBehaviour
 
         return false;
     }
+
+    public void ActivarMision(int numeroMision)
+    {
+        if(numeroMision == 0)
+        {
+            btnrecursos.objetivoActivo = true;
+        }
+        else if(numeroMision == 1)
+        {
+            btnayuda.objetivoActivo = true;
+        }
+        else  if(numeroMision == 2)
+        {
+            btncocina.objetivoActivo = true;
+        }
+    }
+
+    public void CompletarMision(int numeroMision)
+    {
+        if(numeroMision == 0)
+        {
+            btnrecursos.objetivoCumplido = true;
+        }
+        else if(numeroMision == 1)
+        {
+            btnayuda.objetivoCumplido = true;
+        }
+        else  if(numeroMision == 2)
+        {
+             btncocina.objetivoCumplido = true;
+        }
+    }
 }
