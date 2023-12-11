@@ -180,9 +180,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Astrid apellido dificil - Programaci\xF3n\n\nCarolina da Fonseca - Arte
-    y dise\xF1o UI\n\nLis Valle - Sonido\n\nLuna Violeta Gonz\xE1lez - Programaci\xF3n
-    y producci\xF3n\n\nMarti Vercelli - Narrativa, Game Design y Arte"
+  m_text: "Astrid Irene Kusters - Desarrollo\n\nCarolina da Fonseca - Arte y dise\xF1o
+    UI\n\nLis Valle - Sonido\n\nLuna Violeta Gonz\xE1lez - Desarrollo y Producci\xF3n\n\nMarti
+    Vercelli - Narrativa, Game Design y Arte"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
