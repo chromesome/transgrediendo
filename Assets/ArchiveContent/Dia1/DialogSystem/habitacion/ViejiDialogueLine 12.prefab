@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3634720462264391655}
   - component: {fileID: 3942461793335206266}
   m_Layer: 0
-  m_Name: YasminDialogo01
+  m_Name: ViejiDialogueLine 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,7 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1cdca38b2732a643a9495068b2b3c1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <CharacterImage>k__BackingField: {fileID: 21300000, guid: d5e2d3da29c79214b8ca52e491210da5, type: 3}
-  <CharacterDialog>k__BackingField: "Hola soy Isa, \xBFVos sos la nueva no? \xA1Bienvenida!"
-  <CharacterName>k__BackingField: Yasmin
-  <BackgroundColor>k__BackingField: {r: 0.8867924, g: 0.18126254, b: 0.33385015, a: 0.9607843}
+  <CharacterImage>k__BackingField: {fileID: 21300000, guid: 30d44f22dd6b68940bd17b0bbf5a194d, type: 3}
+  <CharacterDialog>k__BackingField: "\xBFPor qu\xE9 no vas a la cocina a ver si Gina
+    necesita una mano mientras me cambio?"
+  <CharacterName>k__BackingField: Tita
+  <BackgroundColor>k__BackingField: {r: 0.5836693, g: 0.21568628, b: 0.6784314, a: 0.87058824}

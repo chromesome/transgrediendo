@@ -673,9 +673,57 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3524213925373162520, guid: fd8fe1f2863c7e54dbdb7e2a93c1b6a0, type: 3}
+      propertyPath: dialogLines.Array.size
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3524213925373162520, guid: fd8fe1f2863c7e54dbdb7e2a93c1b6a0, type: 3}
       propertyPath: dialogLines.Array.data[0]
       value: 
       objectReference: {fileID: 3942461793335206266, guid: c1f86a4c2d9c6494d8eee3fc57576615, type: 3}
+    - target: {fileID: 3524213925373162520, guid: fd8fe1f2863c7e54dbdb7e2a93c1b6a0, type: 3}
+      propertyPath: dialogLines.Array.data[1]
+      value: 
+      objectReference: {fileID: 3942461793335206266, guid: 1af9a32196ca70c4788cfca3057ffab4, type: 3}
+    - target: {fileID: 3524213925373162520, guid: fd8fe1f2863c7e54dbdb7e2a93c1b6a0, type: 3}
+      propertyPath: dialogLines.Array.data[2]
+      value: 
+      objectReference: {fileID: 3942461793335206266, guid: 610d33337621ecc4296c1aa3261206dc, type: 3}
+    - target: {fileID: 3524213925373162520, guid: fd8fe1f2863c7e54dbdb7e2a93c1b6a0, type: 3}
+      propertyPath: dialogLines.Array.data[3]
+      value: 
+      objectReference: {fileID: 3942461793335206266, guid: 430de74577d9d6c42bc173a6fc7727ac, type: 3}
+    - target: {fileID: 3524213925373162520, guid: fd8fe1f2863c7e54dbdb7e2a93c1b6a0, type: 3}
+      propertyPath: dialogLines.Array.data[4]
+      value: 
+      objectReference: {fileID: 3942461793335206266, guid: f4ef552942baa044d8dddcd1df020176, type: 3}
+    - target: {fileID: 3524213925373162520, guid: fd8fe1f2863c7e54dbdb7e2a93c1b6a0, type: 3}
+      propertyPath: dialogLines.Array.data[5]
+      value: 
+      objectReference: {fileID: 3942461793335206266, guid: f2a142855a6b16245be703e23646cb8d, type: 3}
+    - target: {fileID: 3524213925373162520, guid: fd8fe1f2863c7e54dbdb7e2a93c1b6a0, type: 3}
+      propertyPath: dialogLines.Array.data[6]
+      value: 
+      objectReference: {fileID: 3942461793335206266, guid: 59bfd9e30db234a4db100a64e8b9c664, type: 3}
+    - target: {fileID: 3524213925373162520, guid: fd8fe1f2863c7e54dbdb7e2a93c1b6a0, type: 3}
+      propertyPath: dialogLines.Array.data[7]
+      value: 
+      objectReference: {fileID: 3942461793335206266, guid: fe29613a4e3243d4ab646b0e00b9b2bc, type: 3}
+    - target: {fileID: 3524213925373162520, guid: fd8fe1f2863c7e54dbdb7e2a93c1b6a0, type: 3}
+      propertyPath: dialogLines.Array.data[8]
+      value: 
+      objectReference: {fileID: 3942461793335206266, guid: ead50f3a7bee9114194951b2b3579889, type: 3}
+    - target: {fileID: 3524213925373162520, guid: fd8fe1f2863c7e54dbdb7e2a93c1b6a0, type: 3}
+      propertyPath: dialogLines.Array.data[9]
+      value: 
+      objectReference: {fileID: 3942461793335206266, guid: 8534a6bb5620da942ae5bf0f86a4f022, type: 3}
+    - target: {fileID: 3524213925373162520, guid: fd8fe1f2863c7e54dbdb7e2a93c1b6a0, type: 3}
+      propertyPath: dialogLines.Array.data[10]
+      value: 
+      objectReference: {fileID: 3942461793335206266, guid: d5c7d9a505653d54cb2732ecb5131fb5, type: 3}
+    - target: {fileID: 3524213925373162520, guid: fd8fe1f2863c7e54dbdb7e2a93c1b6a0, type: 3}
+      propertyPath: dialogLines.Array.data[11]
+      value: 
+      objectReference: {fileID: 3942461793335206266, guid: 44eb3b25030c9cc4186d8d2ac7845118, type: 3}
     - target: {fileID: 6061983904943002625, guid: fd8fe1f2863c7e54dbdb7e2a93c1b6a0, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -766,6 +814,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3524213925373162520, guid: fd8fe1f2863c7e54dbdb7e2a93c1b6a0, type: 3}
+      propertyPath: dialogLines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3524213925373162520, guid: fd8fe1f2863c7e54dbdb7e2a93c1b6a0, type: 3}
       propertyPath: dialogLines.Array.data[0]
       value: 
       objectReference: {fileID: 3942461793335206266, guid: 6d84363554e3236418b7a71990e131bb, type: 3}
@@ -773,6 +825,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 30d44f22dd6b68940bd17b0bbf5a194d, type: 3}
+    - target: {fileID: 6061983904943002625, guid: fd8fe1f2863c7e54dbdb7e2a93c1b6a0, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

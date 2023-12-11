@@ -11,15 +11,19 @@ public class DayController : MonoBehaviour
     public bool isAtNight = false;
     public Sprite fondoNoche;
     public Sprite fondoDefault;
-    public ButtonCntroller ayudarbtn;
-    public ButtonCntroller cocinarbtn;
-    public ButtonCntroller Recursosbtn;
+    ButtonCntroller ayudarbtn;
+    ButtonCntroller cocinarbtn;
+    ButtonCntroller Recursosbtn;
 
 
 
     // Start is called before the first frame update
     void Start()
-    {  
+    {
+        UiBarScript missionbtns = FindObjectOfType<UiBarScript>();
+        ayudarbtn = missionbtns.btnayuda;
+        cocinarbtn = missionbtns.btncocina;
+        Recursosbtn = missionbtns.btnrecursos;
      
     }
 

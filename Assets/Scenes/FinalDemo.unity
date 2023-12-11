@@ -451,7 +451,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 17.28479, y: -73.8517}
+  m_AnchoredPosition: {x: 0, y: -69}
   m_SizeDelta: {x: -246.81616, y: -274.8758}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1385316898
@@ -474,16 +474,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Este juego est\xE1 en desarrollo y le seguiremos sumando historia.\nFue
+  m_text: "Este juego est\xE1 en desarrollo y le seguiremos sumando historia.\r\nFue
     pensado para revivir las memorias de todas esas mujeres hist\xF3ricas que pelearon
     por nuestros derechos, muchas de ellas ya no est\xE1n y aqu\xED las recordamos,
     otras sobrevivientes y valientes armaron el Archivo de la Memoria Trans, que
-    sin \xE9l, este juego no tendr\xEDa premisa.\nTe invitamos a que escuches sus
-    historias, plagado el internet de ellas y a recordar siempre que las luchas y
-    nuestros derechos de los que gozamos hoy, no son gratuitos, que hay que defenderlos
-    cada d\xEDa, ahora m\xE1s que nunca y que esconden secretos, a veces bellos,
-    a veces tristes, pero siempre, siempre llenos de historias de amor, de militancia
-    y colectividad. \n\n\xA1Furia Travesti!"
+    sin \xE9l, este juego no tendr\xEDa premisa.\r\nNunca olvidemos que las personas
+    travestis, trans no tuvimos una democracia plena hasta la Ley de Identidad de
+    G\xE9nero, lo cual sirvi\xF3 para frenar algunas de las violencias que sufrimos
+    sistem\xE1ticamente, aunque a\xFAn queda mucho trabajo por hacer.\r\nTe invitamos
+    a que escuches sus historias, plagado el internet de ellas y a recordar siempre
+    que las luchas y nuestros derechos de los que gozamos hoy, no son gratuitos,
+    que hay que defenderlos cada d\xEDa, ahora m\xE1s que nunca y que esconden secretos,
+    a veces bellos, a veces tristes, pero siempre, siempre llenos de historias de
+    amor, de militancia y colectividad. \r\n\n\xA1Furia Travesti!\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -517,7 +520,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 32
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -597,8 +600,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 15, y: 112}
-  m_SizeDelta: {x: 215.9902, y: 41.19809}
+  m_AnchoredPosition: {x: 0, y: 65}
+  m_SizeDelta: {x: 194.1169, y: 69.4986}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1705892179
 MonoBehaviour:
@@ -676,9 +679,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
+  m_Sprite: {fileID: 21300000, guid: c2af0c3f10958d04caae3e7b8aba7996, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -929,8 +932,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 73}
-  m_SizeDelta: {x: 0, y: 0.000061035156}
+  m_AnchoredPosition: {x: 0, y: 34.68921}
+  m_SizeDelta: {x: 0, y: 146.5696}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2044338812
 MonoBehaviour:
