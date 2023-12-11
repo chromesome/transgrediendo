@@ -13,6 +13,7 @@ public class UIManager : MonoBehaviour
                 _instance = FindObjectOfType<UIManager>();
                 if (_instance == null)
                 {
+                    Debug.Log("_instance == null");
                     GameObject go = new GameObject("UIManager");
                     _instance = go.AddComponent<UIManager>();
                 }
@@ -24,6 +25,20 @@ public class UIManager : MonoBehaviour
     void Awake()
     {
         // Asegúrate de que el UIManager persista entre las escenas
+        MakeInstance();
         DontDestroyOnLoad(gameObject);
+    }
+
+
+    void MakeInstance()
+    {
+        if (_instance == null)
+        {
+            _instance = this;
+        }
+        else if(_instance != null)
+        {
+            Destroy(gameObject);
+        }
     }
 }
