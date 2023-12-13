@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 
 public class DayController : MonoBehaviour
@@ -15,22 +16,31 @@ public class DayController : MonoBehaviour
     ButtonCntroller cocinarbtn;
     ButtonCntroller Recursosbtn;
 
+    bool ayudarbtnCumplido;
+    bool recursosbtnCumplido;
+    bool cocinarbtnCumplido;
+    public Button botondelScript;
+    public TextMeshPro textoBoton;
+
 
 
     // Start is called before the first frame update
     void Start()
     {
-        UiBarScript missionbtns = FindObjectOfType<UiBarScript>();
+        UiBarScript missionbtns = FindObjectOfType<UiBarScript>();  
+        botondelScript.image.enabled = false;
+        textoBoton.enabled = false;
+
+        //gameObject.SetActive(false);
         ayudarbtn = missionbtns.btnayuda;
         cocinarbtn = missionbtns.btncocina;
-        Recursosbtn = missionbtns.btnrecursos;
-     
+        Recursosbtn = missionbtns.btnrecursos;  
     }
 
     // Update is called once per frame
     void Update()
-    {        
-        
+    {  
+        PasarDia();        
     }
 
     void CambiarFondo(Sprite nuevoFondo)
@@ -70,16 +80,21 @@ public class DayController : MonoBehaviour
     public void PasarDia()
     {
 
-        //Debug.Log("Var de Ayudarbtn: ", ayudarbtn.);
+        //Debug.Log("Var de Ayudarbtn: ", ayudarbtn);
 
-        bool ayudarbtnCumplido = ayudarbtn.objetivoCumplido;
-        bool recursosbtnCumplido = Recursosbtn.objetivoCumplido;
-        bool cocinarbtnCumplido = cocinarbtn.objetivoCumplido;
+        //bool ayudarbtnCumplido = ayudarbtn.objetivoCumplido;
+        //bool recursosbtnCumplido = Recursosbtn.objetivoCumplido;
+       // bool cocinarbtnCumplido = cocinarbtn.objetivoCumplido;
+        ayudarbtnCumplido = ayudarbtn.objetivoCumplido;
+        recursosbtnCumplido = Recursosbtn.objetivoCumplido;
+        cocinarbtnCumplido = cocinarbtn.objetivoCumplido;
 
         if(cocinarbtnCumplido && recursosbtnCumplido && ayudarbtnCumplido)
-        {
+        {           
+            botondelScript.image.enabled = true;
+            textoBoton.enabled = true;    
             isAtNight = !isAtNight;
-            CambiarFondo();
+            //CambiarFondo();
             SceneManager.LoadScene("FinalDemo");            
         }
 
