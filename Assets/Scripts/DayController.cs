@@ -27,14 +27,15 @@ public class DayController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        UiBarScript missionbtns = FindObjectOfType<UiBarScript>();  
+        //UiBarScript missionbtns = FindObjectOfType<UiBarScript>();  
         botondelScript.image.enabled = false;
-        textoBoton.enabled = false;
+        //textoBoton.enabled = false;
 
         //gameObject.SetActive(false);
-        ayudarbtn = missionbtns.btnayuda;
-        cocinarbtn = missionbtns.btncocina;
-        Recursosbtn = missionbtns.btnrecursos;  
+        //ayudarbtn = missionbtns.btnayuda;
+        //cocinarbtn = missionbtns.btncocina;
+        //Recursosbtn = missionbtns.btnrecursos;  
+        InitMissionButtons();
     }
 
     // Update is called once per frame
@@ -84,19 +85,33 @@ public class DayController : MonoBehaviour
 
         //bool ayudarbtnCumplido = ayudarbtn.objetivoCumplido;
         //bool recursosbtnCumplido = Recursosbtn.objetivoCumplido;
-       // bool cocinarbtnCumplido = cocinarbtn.objetivoCumplido;
-        ayudarbtnCumplido = ayudarbtn.objetivoCumplido;
+        // bool cocinarbtnCumplido = cocinarbtn.objetivoCumplido;
+        InitMissionButtons();
+
+         ayudarbtnCumplido = ayudarbtn.objetivoCumplido;
         recursosbtnCumplido = Recursosbtn.objetivoCumplido;
         cocinarbtnCumplido = cocinarbtn.objetivoCumplido;
 
         if(cocinarbtnCumplido && recursosbtnCumplido && ayudarbtnCumplido)
         {           
             botondelScript.image.enabled = true;
-            textoBoton.enabled = true;    
+            //textoBoton.enabled = true;    
             isAtNight = !isAtNight;
             //CambiarFondo();
             SceneManager.LoadScene("FinalDemo");            
         }
 
+    }
+
+    void InitMissionButtons()
+    {
+        if (ayudarbtn == null || Recursosbtn == null || cocinarbtn == null)
+        {
+            UiBarScript missionbtns = FindObjectOfType<UiBarScript>();
+
+            ayudarbtn = missionbtns.btnayuda;
+            cocinarbtn = missionbtns.btncocina;
+            Recursosbtn = missionbtns.btnrecursos;
+        }
     }
 }
