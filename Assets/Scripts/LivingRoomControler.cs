@@ -23,13 +23,13 @@ public class LivingRoomControler : MonoBehaviour
         if(misionestbtn.MisionActiva(0) == true && misionestbtn.MisionCompleta(0) == false)
         {
             dialogoYasmin.enabled=true;
-            piladeobjetos.enabled = false;
+            //piladeobjetos.enabled = false;
             //misionestbtn.CompletarMision(0);           
         }
         else
         {
             dialogoYasmin.enabled=false;
-            piladeobjetos.enabled = true;              
+            //piladeobjetos.enabled = true;              
         }                
 
     }
