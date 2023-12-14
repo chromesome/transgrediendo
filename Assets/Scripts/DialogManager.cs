@@ -96,12 +96,15 @@ public class DialogManager : MonoBehaviour
                 missionbtns.btncocina.objetivoCumplido = true;
             }
 
-            // Para hacer callar a la vieja sin entrar y salir de la habitación
-            DialogManager npc = FindObjectOfType<DialogManager>();
+            // Para hacer callar a la vieja sin entrar y salir de la habitaciï¿½n
+            DialogManager[] npcs = FindObjectsOfType<DialogManager>();
 
-            if(npc != null)
+            for (int i = 0; i < npcs.Length; i++)
             {
-                npc.enabled = false;
+                if(npcs[i] != null)
+                {
+                    npcs[i].enabled = false;
+                }                    
             }
         }
     }
