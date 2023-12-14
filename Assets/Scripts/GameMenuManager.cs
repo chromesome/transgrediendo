@@ -38,7 +38,9 @@ public class GameMenuManager : MonoBehaviour
 
             // Verifica si el rayo golpea un objeto
           
-            if(hit && hit.transform.gameObject.tag != "objeto" && hit.collider != null)
+            if(hit && hit.transform.gameObject.tag != "objeto"
+                && hit.transform.gameObject.tag != "fotos"
+                && hit.transform.gameObject.tag != "audios" && hit.collider != null)
             {
                 Debug.Log("Golpeó un objeto: " + hit.collider.name);
                 nombreObjeto = hit.collider.name;       

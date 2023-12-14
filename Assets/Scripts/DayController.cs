@@ -93,12 +93,15 @@ public class DayController : MonoBehaviour
         cocinarbtnCumplido = cocinarbtn.objetivoCumplido;
 
         if(cocinarbtnCumplido && recursosbtnCumplido && ayudarbtnCumplido)
-        {           
-            botondelScript.image.enabled = true;
-            textoBoton.enabled = true;    
+        {
+            //Descomentar para que se vea el boton de pasar de día
+            //botondelScript.image.enabled = true;
+            //textoBoton.enabled = true;    
+
             isAtNight = !isAtNight;
             //CambiarFondo();
-            SceneManager.LoadScene("FinalDemo");            
+            SceneManager.LoadScene("FinalDemo");
+            SceneManager.UnloadSceneAsync("Kitchen");
         }
 
     }

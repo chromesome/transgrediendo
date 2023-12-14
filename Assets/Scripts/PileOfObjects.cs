@@ -51,28 +51,30 @@ public class PileOfObjects : MonoBehaviour
                     print("lepegaste a algo: " + hit.collider.name);
                     if (hit.collider.tag.Equals("fotos"))
                     {
+                        currentPage = 0;
                         if(objectsInPile[currentPage].ManipularObjetoAudio != null && !PileAudioSource.isPlaying)
                         {
-                            PileAudioSource.clip = objectsInPile[currentPage].ManipularObjetoAudio;
+                            PileAudioSource.clip = this.objectsInPile[currentPage].ManipularObjetoAudio;
                             PileAudioSource.Play();
                         }
                         print("apretaste la fila de fotos");
-                        currentPage = 0;
-                        imagenPrincipal.sprite = objectsInPile[currentPage].ImagenPrincipal;
-                        DescriptionText.SetText(objectsInPile[currentPage].TextoPrincipal);
+                        //imagenPrincipal.sprite = this.objectsInPile[currentPage].ImagenPrincipal;
+                        //DescriptionText.SetText(this.objectsInPile[currentPage].TextoPrincipal);
+                        UpdatePhoto();
 
 
                         ArchiveCanvas.enabled = true;
                     }
-                    else if (hit.collider.tag.Equals("audios"))
-                    {
-                        print("apretaste la reproductora");
-                        if (objectsInPile[currentPage].AudioPrincipal != null && !PileAudioSource.isPlaying)
-                        {
-                            PileAudioSource.clip = objectsInPile[currentPage].AudioPrincipal;
-                            PileAudioSource.Play();
-                        }
-                    }
+                    //else if (hit.collider.tag.Equals("audios"))
+                    //{
+                    //    print("apretaste la reproductora");
+                    //    currentPage = 0;
+                    //    if (this.objectsInPile[currentPage].AudioPrincipal != null && !PileAudioSource.isPlaying)
+                    //    {
+                    //        PileAudioSource.clip = this.objectsInPile[currentPage].AudioPrincipal;
+                    //        PileAudioSource.Play();
+                    //    }
+                    //}
                 }
                 
 
@@ -81,13 +83,20 @@ public class PileOfObjects : MonoBehaviour
         }
     }
 
+    void UpdatePhoto()
+    {
+        imagenPrincipal.sprite = this.objectsInPile[currentPage].ImagenPrincipal;
+        DescriptionText.SetText(this.objectsInPile[currentPage].TextoPrincipal);
+    }
+
     public void NextPage()
     {
         currentPage++;
         if(currentPage <objectsInPile.Count)
         {
-            imagenPrincipal.sprite = objectsInPile[currentPage].ImagenPrincipal;
-            DescriptionText.SetText(objectsInPile[currentPage].TextoPrincipal);
+            //imagenPrincipal.sprite = this.objectsInPile[currentPage].ImagenPrincipal;
+            //DescriptionText.SetText(this.objectsInPile[currentPage].TextoPrincipal);
+            UpdatePhoto();
         }
         else
         {
