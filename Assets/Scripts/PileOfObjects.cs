@@ -21,7 +21,7 @@ public class PileOfObjects : MonoBehaviour
     List<InteractiveObject> objectsInPile { get; set; }
 
     int currentPage = 0;
-    AudioSource mPileOfObjects;
+    AudioSource PileAudioSource;
 
     private UiBarScript misionestbtn;
 
@@ -29,7 +29,7 @@ public class PileOfObjects : MonoBehaviour
     void Start()
     {
        
-        mPileOfObjects = GetComponent<AudioSource>();
+        PileAudioSource = GetComponent<AudioSource>();
         ArchiveCanvas.enabled = false;        
     }
 
@@ -45,21 +45,33 @@ public class PileOfObjects : MonoBehaviour
 
             if(hit.collider != null)
             {
-                misionestbtn = FindObjectOfType<UiBarScript>();
-                if(misionestbtn.MisionActiva(0) == false || misionestbtn.MisionCompleta(0) == true)
+                //misionestbtn = FindObjectOfType<UiBarScript>();
+                //if(misionestbtn.MisionActiva(0) == false || misionestbtn.MisionCompleta(0) == true)
                 {
                     print("lepegaste a algo: " + hit.collider.name);
-                    if (hit.collider.name.Equals("PilaDeFotos"))
+                    if (hit.collider.tag.Equals("fotos"))
                     {
-                        if (!mPileOfObjects.isPlaying)
+                        if(objectsInPile[currentPage].ManipularObjetoAudio != null && !PileAudioSource.isPlaying)
                         {
-                            mPileOfObjects.Play();
+                            PileAudioSource.clip = objectsInPile[currentPage].ManipularObjetoAudio;
+                            PileAudioSource.Play();
                         }
                         print("apretaste la fila de fotos");
                         currentPage = 0;
                         imagenPrincipal.sprite = objectsInPile[currentPage].ImagenPrincipal;
                         DescriptionText.SetText(objectsInPile[currentPage].TextoPrincipal);
+
+
                         ArchiveCanvas.enabled = true;
+                    }
+                    else if (hit.collider.tag.Equals("audios"))
+                    {
+                        print("apretaste la reproductora");
+                        if (objectsInPile[currentPage].AudioPrincipal != null && !PileAudioSource.isPlaying)
+                        {
+                            PileAudioSource.clip = objectsInPile[currentPage].AudioPrincipal;
+                            PileAudioSource.Play();
+                        }
                     }
                 }
                 

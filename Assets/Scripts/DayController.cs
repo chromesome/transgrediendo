@@ -20,7 +20,7 @@ public class DayController : MonoBehaviour
     bool recursosbtnCumplido;
     bool cocinarbtnCumplido;
     public Button botondelScript;
-    public TextMeshPro textoBoton;
+    public TextMeshProUGUI textoBoton;
 
 
 
@@ -29,7 +29,7 @@ public class DayController : MonoBehaviour
     {
         //UiBarScript missionbtns = FindObjectOfType<UiBarScript>();  
         botondelScript.image.enabled = false;
-        //textoBoton.enabled = false;
+        textoBoton.enabled = false;
 
         //gameObject.SetActive(false);
         //ayudarbtn = missionbtns.btnayuda;
@@ -95,7 +95,7 @@ public class DayController : MonoBehaviour
         if(cocinarbtnCumplido && recursosbtnCumplido && ayudarbtnCumplido)
         {           
             botondelScript.image.enabled = true;
-            //textoBoton.enabled = true;    
+            textoBoton.enabled = true;    
             isAtNight = !isAtNight;
             //CambiarFondo();
             SceneManager.LoadScene("FinalDemo");            
