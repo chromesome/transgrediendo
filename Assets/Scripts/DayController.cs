@@ -101,7 +101,7 @@ public class DayController : MonoBehaviour
             isAtNight = !isAtNight;
             //CambiarFondo();
             SceneManager.LoadScene("FinalDemo");
-            SceneManager.UnloadSceneAsync("Kitchen");
+            this.enabled = false;
         }
 
     }
