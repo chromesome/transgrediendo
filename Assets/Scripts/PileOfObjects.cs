@@ -21,15 +21,16 @@ public class PileOfObjects : MonoBehaviour
     List<InteractiveObject> objectsInPile { get; set; }
 
     int currentPage = 0;
-    AudioSource mPileOfObjects;
+    AudioSource PileAudioSource;
+
+    private UiBarScript misionestbtn;
 
     // Start is called before the first frame update
     void Start()
     {
-        //Acá me empiezo a mandar caagadas 
-
-        mPileOfObjects = GetComponent<AudioSource>();
-        ArchiveCanvas.enabled = false;
+       
+        PileAudioSource = GetComponent<AudioSource>();
+        ArchiveCanvas.enabled = false;        
     }
 
     // Update is called once per frame
@@ -42,25 +43,50 @@ public class PileOfObjects : MonoBehaviour
             Vector3 hitCoord= Camera.main.ScreenToWorldPoint(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(hitCoord, Vector2.zero);
 
-            if(hit.collider != null )
+            if(hit.collider != null)
             {
-                
-                print("lepegaste a algo: " + hit.collider.name);
-                if (hit.collider.name.Equals("PilaDeFotos"))
+                //misionestbtn = FindObjectOfType<UiBarScript>();
+                //if(misionestbtn.MisionActiva(0) == false || misionestbtn.MisionCompleta(0) == true)
                 {
-                    if (!mPileOfObjects.isPlaying)
+                    print("lepegaste a algo: " + hit.collider.name);
+                    if (hit.collider.tag.Equals("fotos"))
                     {
-                        mPileOfObjects.Play();
+                        currentPage = 0;
+                        if(objectsInPile[currentPage].ManipularObjetoAudio != null && !PileAudioSource.isPlaying)
+                        {
+                            PileAudioSource.clip = this.objectsInPile[currentPage].ManipularObjetoAudio;
+                            PileAudioSource.Play();
+                        }
+                        print("apretaste la fila de fotos");
+                        //imagenPrincipal.sprite = this.objectsInPile[currentPage].ImagenPrincipal;
+                        //DescriptionText.SetText(this.objectsInPile[currentPage].TextoPrincipal);
+                        UpdatePhoto();
+
+
+                        ArchiveCanvas.enabled = true;
                     }
-                    print("apretaste la fila de fotos");
-                    currentPage = 0;
-                    imagenPrincipal.sprite = objectsInPile[currentPage].ImagenPrincipal;
-                    DescriptionText.SetText(objectsInPile[currentPage].TextoPrincipal);
-                    ArchiveCanvas.enabled = true;
+                    //else if (hit.collider.tag.Equals("audios"))
+                    //{
+                    //    print("apretaste la reproductora");
+                    //    currentPage = 0;
+                    //    if (this.objectsInPile[currentPage].AudioPrincipal != null && !PileAudioSource.isPlaying)
+                    //    {
+                    //        PileAudioSource.clip = this.objectsInPile[currentPage].AudioPrincipal;
+                    //        PileAudioSource.Play();
+                    //    }
+                    //}
                 }
+                
+
             }
 
         }
+    }
+
+    void UpdatePhoto()
+    {
+        imagenPrincipal.sprite = this.objectsInPile[currentPage].ImagenPrincipal;
+        DescriptionText.SetText(this.objectsInPile[currentPage].TextoPrincipal);
     }
 
     public void NextPage()
@@ -68,8 +94,9 @@ public class PileOfObjects : MonoBehaviour
         currentPage++;
         if(currentPage <objectsInPile.Count)
         {
-            imagenPrincipal.sprite = objectsInPile[currentPage].ImagenPrincipal;
-            DescriptionText.SetText(objectsInPile[currentPage].TextoPrincipal);
+            //imagenPrincipal.sprite = this.objectsInPile[currentPage].ImagenPrincipal;
+            //DescriptionText.SetText(this.objectsInPile[currentPage].TextoPrincipal);
+            UpdatePhoto();
         }
         else
         {

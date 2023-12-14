@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Backbtn
+  - objeto
+  - dialogs
+  - fotos
+  - audios
   layers:
   - Default
   - TransparentFX

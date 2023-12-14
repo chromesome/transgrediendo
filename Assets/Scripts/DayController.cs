@@ -3,21 +3,45 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using TMPro;
 
 
 public class DayController : MonoBehaviour
-{    public bool isAtNight = false;
+{   
+    public bool isAtNight = false;
     public Sprite fondoNoche;
-    public Sprite fonfoDefault;
+    public Sprite fondoDefault;
+    ButtonCntroller ayudarbtn;
+    ButtonCntroller cocinarbtn;
+    ButtonCntroller Recursosbtn;
+
+    bool ayudarbtnCumplido;
+    bool recursosbtnCumplido;
+    bool cocinarbtnCumplido;
+    public Button botondelScript;
+    public TextMeshProUGUI textoBoton;
+
+
 
     // Start is called before the first frame update
     void Start()
-    {        
+    {
+        //UiBarScript missionbtns = FindObjectOfType<UiBarScript>();  
+        botondelScript.image.enabled = false;
+        textoBoton.enabled = false;
+
+        //gameObject.SetActive(false);
+        //ayudarbtn = missionbtns.btnayuda;
+        //cocinarbtn = missionbtns.btncocina;
+        //Recursosbtn = missionbtns.btnrecursos;  
+        InitMissionButtons();
     }
 
     // Update is called once per frame
     void Update()
-    {
+    {  
+        PasarDia();        
     }
 
     void CambiarFondo(Sprite nuevoFondo)
@@ -40,16 +64,57 @@ public class DayController : MonoBehaviour
         }
     }
 
-    void CambiarFondo()
-    {
+    public void CambiarFondo()
+    {       
+
         if(!isAtNight)
         {
-            CambiarFondo(fonfoDefault);
+            CambiarFondo(fondoDefault);
         }
         else
         {
             CambiarFondo(fondoNoche);
         }
 
+    }
+
+    public void PasarDia()
+    {
+
+        //Debug.Log("Var de Ayudarbtn: ", ayudarbtn);
+
+        //bool ayudarbtnCumplido = ayudarbtn.objetivoCumplido;
+        //bool recursosbtnCumplido = Recursosbtn.objetivoCumplido;
+        // bool cocinarbtnCumplido = cocinarbtn.objetivoCumplido;
+        InitMissionButtons();
+
+         ayudarbtnCumplido = ayudarbtn.objetivoCumplido;
+        recursosbtnCumplido = Recursosbtn.objetivoCumplido;
+        cocinarbtnCumplido = cocinarbtn.objetivoCumplido;
+
+        if(cocinarbtnCumplido && recursosbtnCumplido && ayudarbtnCumplido)
+        {
+            //Descomentar para que se vea el boton de pasar de día
+            //botondelScript.image.enabled = true;
+            //textoBoton.enabled = true;    
+
+            isAtNight = !isAtNight;
+            //CambiarFondo();
+            SceneManager.LoadScene("FinalDemo");
+            this.enabled = false;
+        }
+
+    }
+
+    void InitMissionButtons()
+    {
+        if (ayudarbtn == null || Recursosbtn == null || cocinarbtn == null)
+        {
+            UiBarScript missionbtns = FindObjectOfType<UiBarScript>();
+
+            ayudarbtn = missionbtns.btnayuda;
+            cocinarbtn = missionbtns.btncocina;
+            Recursosbtn = missionbtns.btnrecursos;
+        }
     }
 }

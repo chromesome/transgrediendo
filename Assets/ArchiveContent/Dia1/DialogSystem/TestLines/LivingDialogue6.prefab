@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3634720462264391655}
   - component: {fileID: 3942461793335206266}
   m_Layer: 0
-  m_Name: DialogueLine
+  m_Name: LivingDialogue6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,8 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1cdca38b2732a643a9495068b2b3c1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <CharacterImage>k__BackingField: {fileID: 21300000, guid: 800952d5d078a7e49b7a93e89a740a15, type: 3}
-  <CharacterDialog>k__BackingField: Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  <CharacterName>k__BackingField: Soyla Mama
-  <BackgroundColor>k__BackingField: {r: 0.84313726, g: 0.16078432, b: 0.7607843, a: 0.9607843}
+  <CharacterImage>k__BackingField: {fileID: 21300000, guid: d5e2d3da29c79214b8ca52e491210da5, type: 3}
+  <CharacterDialog>k__BackingField: 'Necesito algo de plata porque lo que tengo no
+    me va a alcanzar. '
+  <CharacterName>k__BackingField: Isabella
+  <BackgroundColor>k__BackingField: {r: 0.11213944, g: 0.66967374, b: 0.7924528, a: 0.49411765}
