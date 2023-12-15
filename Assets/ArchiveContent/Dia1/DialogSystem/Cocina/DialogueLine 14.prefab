@@ -44,10 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1cdca38b2732a643a9495068b2b3c1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <CharacterImage>k__BackingField: {fileID: 21300000, guid: 060a74f7a67160e49bc4325c47ac09d2, type: 3}
+  <CharacterImage>k__BackingField: {fileID: 21300000, guid: 4cac03b447bcb7f408e1ade6b5325522, type: 3}
   <CharacterDialog>k__BackingField: "S\xED, porque nosotras ac\xE1 estamos tratando
-    de ayudar a la gente del barrio, para que nos vean mejor, viste. La Maqui empez\xF3
-    a coser, una vecina nos regal\xF3 una m\xE1quina y ah\xED anda como loca haciendo
-    desastres en la ropa (R\xEDen)"
+    de ayudar a la gente del barrio, para que nos vean mejor, \xBFviste? La Maqui
+    empez\xF3 a coser. Una vecina nos regal\xF3 una m\xE1quina y ah\xED anda como
+    loca haciendo desastres con la ropa. *Rien*"
   <CharacterName>k__BackingField: Gina
-  <BackgroundColor>k__BackingField: {r: 0.3397017, g: 0.59748423, b: 0.13715824, a: 0.7294118}
+  <BackgroundColor>k__BackingField: {r: 0.7411765, g: 0.62352943, b: 0.31764707, a: 0.5411765}

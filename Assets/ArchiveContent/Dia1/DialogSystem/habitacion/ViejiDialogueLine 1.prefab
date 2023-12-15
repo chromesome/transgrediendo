@@ -44,8 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1cdca38b2732a643a9495068b2b3c1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <CharacterImage>k__BackingField: {fileID: 21300000, guid: 354c10f6af8942743972e1ab1c1cce27, type: 3}
+  <CharacterImage>k__BackingField: {fileID: 21300000, guid: f3a9ad0324b632f409f1d476033dce57, type: 3}
   <CharacterDialog>k__BackingField: "Habl\xE1 con Isabella que tiene que ir a buscar
     las cositas para cocinar."
   <CharacterName>k__BackingField: Tita
-  <BackgroundColor>k__BackingField: {r: 0.5836693, g: 0.21568628, b: 0.6784314, a: 0.87058824}
+  <BackgroundColor>k__BackingField: {r: 0.92549026, g: 0.32156864, b: 0.5803922, a: 0.5019608}
