@@ -47,4 +47,4 @@ MonoBehaviour:
   <CharacterImage>k__BackingField: {fileID: 21300000, guid: d5e2d3da29c79214b8ca52e491210da5, type: 3}
   <CharacterDialog>k__BackingField: Gracias
   <CharacterName>k__BackingField: Vos
-  <BackgroundColor>k__BackingField: {r: 0.44144797, g: 0.21573508, b: 0.6792453, a: 0.9607843}
+  <BackgroundColor>k__BackingField: {r: 0.44144797, g: 0.21573508, b: 0.6792453, a: 0.7137255}
