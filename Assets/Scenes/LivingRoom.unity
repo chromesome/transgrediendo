@@ -1968,7 +1968,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3524213925373162520, guid: fd8fe1f2863c7e54dbdb7e2a93c1b6a0, type: 3}
       propertyPath: dialogLines.Array.size
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3524213925373162520, guid: fd8fe1f2863c7e54dbdb7e2a93c1b6a0, type: 3}
       propertyPath: dialogLines.Array.data[0]
@@ -1989,19 +1989,19 @@ PrefabInstance:
     - target: {fileID: 3524213925373162520, guid: fd8fe1f2863c7e54dbdb7e2a93c1b6a0, type: 3}
       propertyPath: dialogLines.Array.data[4]
       value: 
-      objectReference: {fileID: 3942461793335206266, guid: 8a98bb8fdf890c04194fc06495df9be3, type: 3}
+      objectReference: {fileID: 3942461793335206266, guid: b764f4faa45b3754bbad44ab0c4222a2, type: 3}
     - target: {fileID: 3524213925373162520, guid: fd8fe1f2863c7e54dbdb7e2a93c1b6a0, type: 3}
       propertyPath: dialogLines.Array.data[5]
       value: 
-      objectReference: {fileID: 3942461793335206266, guid: a211d6374e4428d4cb0c1e3f2e1ec290, type: 3}
+      objectReference: {fileID: 3942461793335206266, guid: 8a98bb8fdf890c04194fc06495df9be3, type: 3}
     - target: {fileID: 3524213925373162520, guid: fd8fe1f2863c7e54dbdb7e2a93c1b6a0, type: 3}
       propertyPath: dialogLines.Array.data[6]
       value: 
-      objectReference: {fileID: 3942461793335206266, guid: 6b473ec5a177b0547a34bcc4175d7877, type: 3}
+      objectReference: {fileID: 3942461793335206266, guid: a211d6374e4428d4cb0c1e3f2e1ec290, type: 3}
     - target: {fileID: 3524213925373162520, guid: fd8fe1f2863c7e54dbdb7e2a93c1b6a0, type: 3}
       propertyPath: dialogLines.Array.data[7]
       value: 
-      objectReference: {fileID: 3942461793335206266, guid: 64f3317800c0ee545ae8e825acdc1f87, type: 3}
+      objectReference: {fileID: 3942461793335206266, guid: 6b473ec5a177b0547a34bcc4175d7877, type: 3}
     - target: {fileID: 3524213925373162520, guid: fd8fe1f2863c7e54dbdb7e2a93c1b6a0, type: 3}
       propertyPath: dialogLines.Array.data[8]
       value: 

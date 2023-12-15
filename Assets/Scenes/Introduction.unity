@@ -526,7 +526,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 15, y: 26}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1119.1838, y: 493.1242}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1385316898
@@ -549,21 +549,21 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "A finales de los 80 muchas travestis provenientes de pueblos chicos (infiernos
-    grandes) de toda la Argentina, se desplazan hacia Buenos Aires, muchas de ellas
-    en busca de una nueva vida, se empiezan a instalar en distintos hoteles, o shootings
-    como se les termina llamando luego. La capital federal ofrec\xEDa una especie
+  m_text: "A finales de los 80, muchas travestis provenientes de pueblos chicos (infiernos
+    grandes) de toda la Argentina se desplazan hacia Buenos Aires. Muchas de ellas,
+    en busca de una nueva vida, se empiezan a instalar en distintos hoteles o shootings,
+    como se les termin\xF3 llamando luego. La capital federal ofrec\xEDa una especie
     de anonimato para aquellas que hu\xEDan de la violencia que sufr\xEDan en sus
-    lugares de origen.\nLa vivienda era uno de los miles de los derechos que se les
-    eran arrebatados, y muchas veces esos hoteles eran tomados y convertidos en hogares
-    como un acto de rebeld\xEDa, porque se les exig\xEDa que paguen m\xE1s o directamente
-    eran desalojadas por la polic\xEDa.\nEsos hogares fueron testigos de lucha, amor,
-    bronca, verdades, y por sobre todo memoria.\n\nEn este videojuego encarn\xE1s
-    a una mam\xE1 trans que dirige uno de esos hoteles, y tu misi\xF3n ser\xE1 entrenar
-    a una joven que viene del norte por primera vez a la ciudad y debe entender c\xF3mo
-    ayudar en la casa. Pod\xE9s interactuar con los objetos dispersos en los escenarios
-    para conocer m\xE1s sobre las distintas identidades que formaron parte de la
-    historia de nuestros derechos, fragmentos del Archivo de la Memoria Trans."
+    lugares de origen.\r\n\r\nLa vivienda era uno de los miles de los derechos que
+    les eran arrebatados, y muchas veces esos hoteles eran tomados y convertidos
+    en hogares como un acto de rebeld\xEDa, porque se les exig\xEDa que paguen m\xE1s
+    o directamente eran desalojadas por la polic\xEDa. Esos hogares fueron testigos
+    de lucha, amor, bronca, verdades, y por sobre todo memoria.\r\n\r\nEn este videojuego
+    encarn\xE1s a una joven trans que viene del norte por primera vez a la ciudad
+    y debe entender c\xF3mo ayudar en la casa. Pod\xE9s interactuar con los objetos
+    del lugar para conocer m\xE1s sobre las distintas identidades que formaron parte
+    de la historia de nuestros derechos, a trav\xE9s de fragmentos del Archivo de
+    la Memoria Trans."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

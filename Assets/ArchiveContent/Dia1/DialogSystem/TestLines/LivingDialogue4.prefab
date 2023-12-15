@@ -45,6 +45,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <CharacterImage>k__BackingField: {fileID: 21300000, guid: d5e2d3da29c79214b8ca52e491210da5, type: 3}
-  <CharacterDialog>k__BackingField: "\xBFQu\xE9 necesitamos?"
+  <CharacterDialog>k__BackingField: "Bueno, ya me conoces a m\xED *sonrie*"
   <CharacterName>k__BackingField: Isabella
   <BackgroundColor>k__BackingField: {r: 0.11213944, g: 0.66967374, b: 0.7924528, a: 0.49411765}
