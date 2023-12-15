@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1cdca38b2732a643a9495068b2b3c1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <CharacterImage>k__BackingField: {fileID: 21300000, guid: d5e2d3da29c79214b8ca52e491210da5, type: 3}
+  <CharacterImage>k__BackingField: {fileID: 21300000, guid: b70341697f26db141843ac7a86d9467a, type: 3}
   <CharacterDialog>k__BackingField: "Tom\xE1, esto es lo que me qued\xF3 despu\xE9s
     del viaje. *le das el dinero*"
   <CharacterName>k__BackingField: Vos

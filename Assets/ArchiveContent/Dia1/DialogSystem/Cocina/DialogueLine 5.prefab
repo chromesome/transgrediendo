@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1cdca38b2732a643a9495068b2b3c1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <CharacterImage>k__BackingField: {fileID: 21300000, guid: 060a74f7a67160e49bc4325c47ac09d2, type: 3}
+  <CharacterImage>k__BackingField: {fileID: 21300000, guid: 4cac03b447bcb7f408e1ade6b5325522, type: 3}
   <CharacterDialog>k__BackingField: "A mitad de camino me bajaron y me hicieron esperar
     otro porque hab\xEDa un grupo de religiosos. Yo les mostr\xE9 mi cadenita de
     la Virgen pero no import\xF3 mucho."

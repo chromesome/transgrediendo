@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1cdca38b2732a643a9495068b2b3c1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <CharacterImage>k__BackingField: {fileID: 21300000, guid: 354c10f6af8942743972e1ab1c1cce27, type: 3}
+  <CharacterImage>k__BackingField: {fileID: 21300000, guid: f3a9ad0324b632f409f1d476033dce57, type: 3}
   <CharacterDialog>k__BackingField: "Ahhh qu\xE9 me cont\xE1s, con esa pinta, nunca
     me lo hubiera imaginado *rien juntas*"
   <CharacterName>k__BackingField: Tita
