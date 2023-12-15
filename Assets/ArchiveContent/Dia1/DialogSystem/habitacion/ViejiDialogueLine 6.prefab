@@ -44,8 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1cdca38b2732a643a9495068b2b3c1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <CharacterImage>k__BackingField: {fileID: 21300000, guid: 30d44f22dd6b68940bd17b0bbf5a194d, type: 3}
-  <CharacterDialog>k__BackingField: "Sol\xEDa ir a la iglesia con una amiga, y jug\xE1bamos
+  <CharacterImage>k__BackingField: {fileID: 21300000, guid: f3a9ad0324b632f409f1d476033dce57, type: 3}
+  <CharacterDialog>k__BackingField: "Sol\xEDa ir a la iglesia con una amiga y jug\xE1bamos
     en la calle a que \xE9ramos monjas."
   <CharacterName>k__BackingField: Vos
-  <BackgroundColor>k__BackingField: {r: 0.44144797, g: 0.21573508, b: 0.6792453, a: 0.9607843}
+  <BackgroundColor>k__BackingField: {r: 0.44144797, g: 0.21573508, b: 0.6792453, a: 0.7137255}

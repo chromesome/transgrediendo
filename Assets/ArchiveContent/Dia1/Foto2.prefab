@@ -54,15 +54,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7030067050319027178, guid: 2233c955b31094d4aba4e36b88f93cf6, type: 3}
       propertyPath: <TextoPrincipal>k__BackingField
-      value: "El archivo de la memoria trans primero para mi es cumplir el sue\xF1o
+      value: "El Archivo de la Memoria Trans, para m\xED, es cumplir el sue\xF1o
         de Pia, y estamos cumpliendo el rol que tuvieron en su momento madres y abuelas
-        de plaza de mayo reconstruyendo una memoria. En un documental les preguntan:
+        de Plaza de Mayo: reconstruyendo una memoria. En un documental les preguntan:
         \u201C\xBFC\xF3mo hicieron ustedes para poder contener uno de los archivos
-        m\xE1s importantes de la dictadura, con un estado que se encarg\xF3 de ocultar
-        todo?\u201D Y ellas respondieron: \u201CTen\xEDamos lo mas importante que
-        era la memoria del sobreviviente\u201D Y ese fue el click que me dijo a mi
-        que yo ten\xEDa tambi\xE9n los recuerdos y las memorias de las sobrevivientes,
-        tengo que juntarlas, y que empiecen a hablar."
+        m\xE1s importantes de la dictadura, con un Estado que se encarg\xF3 de ocultar
+        todo?\u201D Y ellas respondieron: \u201CTen\xEDamos lo m\xE1s importante,
+        que era la memoria del sobreviviente\u201D Y ese fue el click que me dijo
+        a m\xED que yo ten\xEDa tambi\xE9n los recuerdos y las memorias de las sobrevivientes.
+        Tengo que juntarlas, y que empiecen a hablar."
       objectReference: {fileID: 0}
     - target: {fileID: 7030067050319027178, guid: 2233c955b31094d4aba4e36b88f93cf6, type: 3}
       propertyPath: <ImagenPrincipal>k__BackingField

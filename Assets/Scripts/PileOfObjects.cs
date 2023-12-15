@@ -51,19 +51,25 @@ public class PileOfObjects : MonoBehaviour
                     print("lepegaste a algo: " + hit.collider.name);
                     if (hit.collider.tag.Equals("fotos"))
                     {
-                        currentPage = 0;
-                        if(objectsInPile[currentPage].ManipularObjetoAudio != null && !PileAudioSource.isPlaying)
+                        // Nunca hagan esto en el update
+                        if(!DialogActive())
                         {
-                            PileAudioSource.clip = this.objectsInPile[currentPage].ManipularObjetoAudio;
-                            PileAudioSource.Play();
+                            currentPage = 0;
+                            if(objectsInPile[currentPage].ManipularObjetoAudio != null && !PileAudioSource.isPlaying)
+                            {
+                                PileAudioSource.clip = this.objectsInPile[currentPage].ManipularObjetoAudio;
+                                PileAudioSource.Play();
+                            }
+                            print("apretaste la fila de fotos");
+                            //imagenPrincipal.sprite = this.objectsInPile[currentPage].ImagenPrincipal;
+                            //DescriptionText.SetText(this.objectsInPile[currentPage].TextoPrincipal);
+                            UpdatePhoto();
+
+
+                            ArchiveCanvas.enabled = true;
+
                         }
-                        print("apretaste la fila de fotos");
-                        //imagenPrincipal.sprite = this.objectsInPile[currentPage].ImagenPrincipal;
-                        //DescriptionText.SetText(this.objectsInPile[currentPage].TextoPrincipal);
-                        UpdatePhoto();
 
-
-                        ArchiveCanvas.enabled = true;
                     }
                     //else if (hit.collider.tag.Equals("audios"))
                     //{
@@ -81,6 +87,22 @@ public class PileOfObjects : MonoBehaviour
             }
 
         }
+    }
+
+    bool DialogActive()
+    {
+
+        DialogManager sceneDialog = FindObjectOfType<DialogManager>();
+
+        if(sceneDialog != null)
+        {
+            if(sceneDialog.GetComponentInChildren<Canvas>().enabled)
+            {
+                return true;
+            }
+        }
+        
+        return false;
     }
 
     void UpdatePhoto()

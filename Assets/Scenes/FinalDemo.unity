@@ -123,6 +123,134 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &240797193
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 240797194}
+  - component: {fileID: 240797195}
+  m_Layer: 0
+  m_Name: backgroundaudioFinale
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &240797194
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240797193}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1289674719}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &240797195
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240797193}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: dc61b615bd10cc84b9dd8c4447a5716f, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.25
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &293202492
 GameObject:
   m_ObjectHideFlags: 0
@@ -328,6 +456,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1289674718
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1289674719}
+  m_Layer: 0
+  m_Name: BackgroundaudioFinale
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1289674719
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289674718}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 683, y: 415.06747, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 240797194}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1385316896
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,8 +522,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.5142, y: -15.83}
-  m_SizeDelta: {x: 1215.459, y: 745.5842}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1305.5054, y: 873.5417}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1385316898
 MonoBehaviour:
@@ -385,19 +545,27 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Este juego est\xE1 en desarrollo y le seguiremos sumando historia.\r\n\nFue
+  m_text: "Este juego est\xE1 en desarrollo y le seguiremos sumando historia. Fue
     pensado para revivir las memorias de todas esas mujeres hist\xF3ricas que pelearon
-    por nuestros derechos, muchas de ellas ya no est\xE1n y aqu\xED las recordamos,
-    otras sobrevivientes y valientes armaron el Archivo de la Memoria Trans, que
-    sin \xE9l, este juego no tendr\xEDa premisa.\r\n\nNunca olvidemos que las personas
-    travestis, trans no tuvimos una democracia plena hasta la Ley de Identidad de
-    G\xE9nero, lo cual sirvi\xF3 para frenar algunas de las violencias que sufrimos
-    sistem\xE1ticamente, aunque a\xFAn queda mucho trabajo por hacer.\r\n\nTe invitamos
-    a que escuches sus historias, plagado el internet de ellas y a recordar siempre
-    que las luchas y nuestros derechos de los que gozamos hoy, no son gratuitos,
-    que hay que defenderlos cada d\xEDa, ahora m\xE1s que nunca y que esconden secretos,
-    a veces bellos, a veces tristes, pero siempre, siempre llenos de historias de
-    amor, de militancia y colectividad. \r\n\n\n\n\xA1Furia Travesti!\r\n"
+    por nuestros derechos. Muchas de ellas ya no est\xE1n y aqu\xED las recordamos.
+    Otras, sobrevivientes y valientes, armaron el Archivo de la Memoria Trans, sin
+    el cual este juego no tendr\xEDa premisa.\r\n\r\nNunca olvidemos que las personas
+    travestis y trans no tuvimos una democracia plena hasta la Ley de Identidad de
+    G\xE9nero, la cual sirvi\xF3 para frenar algunas de las violencias que sufrimos
+    sistem\xE1ticamente. Y que a\xFAn luchamos por muchas cosas: Por el derecho a
+    caminar por las calles sin miedo. A no ser discriminadas injustamente en el trabajo,
+    en las escuelas, a tener igualdad de oportunidades ante la sociedad. \r\n\r\nY
+    por la reparaci\xF3n hist\xF3rica debida a todas aquellas mujeres trans-travestis
+    que fueron agredidas, vulneradas y ultrajadas durante y despu\xE9s de la dictadura.
+    Que fueron perseguidas y forzadas a vivir en los m\xE1rgenes de la sociedad,
+    pero que nunca se rindieron ni dejaron de tejer redes de apoyo o de luchar por
+    un mejor pa\xEDs para las sobrevivientes y las generaciones que vendr\xEDan.
+    \r\n\r\nTe invitamos a que escuches sus historias, plagado el internet de ellas,
+    y a recordar siempre que las luchas y los derechos de los que gozamos hoy no
+    son gratuitos. Que hay que defenderlos cada d\xEDa, ahora m\xE1s que nunca, y
+    que esconden secretos: a veces bellos, a veces tristes, pero siempre, siempre,
+    llenos de historias de amor, de militancia y colectividad.\r\n \r\n\xA1Reparaci\xF3n
+    Hist\xF3rica Ya! \xA1Furia Travesti!\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -431,7 +599,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 32
+  m_HorizontalAlignment: 8
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -460,7 +628,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 1.7057495, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -510,7 +678,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 65}
+  m_AnchoredPosition: {x: 0, y: 55}
   m_SizeDelta: {x: 194.1169, y: 69.4986}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1705892179
@@ -842,7 +1010,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 34.68921}
+  m_AnchoredPosition: {x: 0, y: 35}
   m_SizeDelta: {x: 1366, y: 914.5696}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2044338812
@@ -892,3 +1060,4 @@ SceneRoots:
   - {fileID: 607753499}
   - {fileID: 1778355454}
   - {fileID: 293202494}
+  - {fileID: 1289674719}
