@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1cdca38b2732a643a9495068b2b3c1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <CharacterImage>k__BackingField: {fileID: 21300000, guid: 30d44f22dd6b68940bd17b0bbf5a194d, type: 3}
+  <CharacterImage>k__BackingField: {fileID: 21300000, guid: 354c10f6af8942743972e1ab1c1cce27, type: 3}
   <CharacterDialog>k__BackingField: "Ay nena menos mal que me ayud\xE1s porque yo
     sola ya no puedo ni mirarme los pies. "
   <CharacterName>k__BackingField: Tita

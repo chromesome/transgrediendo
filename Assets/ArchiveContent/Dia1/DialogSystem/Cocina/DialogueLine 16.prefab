@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1cdca38b2732a643a9495068b2b3c1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <CharacterImage>k__BackingField: {fileID: 21300000, guid: 98ece980ab647bf4e9260979b7282db6, type: 3}
+  <CharacterImage>k__BackingField: {fileID: 21300000, guid: 060a74f7a67160e49bc4325c47ac09d2, type: 3}
   <CharacterDialog>k__BackingField: "No tanto, pero rapidito te adapt\xE1s eh, la
     idea es que puedas ayudar en lo que puedas, y entre todas hacer de esta casa
     un hogar."
